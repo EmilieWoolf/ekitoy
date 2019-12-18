@@ -12,8 +12,8 @@ export default class Association extends Component {
                     <h5 style={{whiteSpace:"nowrap", marginTop:"25px"}}>Mon association</h5>
                 </div>
                 <div className="centre">
-                    <select style={{border:"1px solid #ccc", borderRadius:"10px", backgroundColor:"#fff"}}>
-                        <option>Sélectionnez</option>
+                    <p style={{textAlign:"center", fontSize:"17px"}}>Sélectionnez l'association à qui vous souhaitez reverser une partie du montant de vos achats !</p>
+                    <select style={{border:"1px solid #ccc", borderRadius:"10px", backgroundColor:"#fff", padding:"5px"}}>
                         <option>Emmaüs</option>
                         <option>Restaurants du coeur</option>
                         <option>Greenpeace</option>
