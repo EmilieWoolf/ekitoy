@@ -18,19 +18,19 @@ const Navbar = () => {
         <div>
             <Nav className="StickyNavbar">
                 <NavItem>
-                    <NavLink href="#"><Link to="/home"><FontAwesomeIcon className="icon" icon={faHome} /></Link></NavLink>
+                    <NavLink><Link to="/home"><FontAwesomeIcon className="icon" icon={faHome} /></Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#"><Link to="/search"><FontAwesomeIcon className="icon" icon={faSearch} /></Link></NavLink>
+                    <NavLink><Link to="/search"><FontAwesomeIcon className="icon" icon={faSearch} /></Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#"><Link to="/sell"><FontAwesomeIcon className="iconSup" icon={faPlusCircle} /></Link></NavLink>
+                    <NavLink><Link to="/sell"><FontAwesomeIcon className="iconSup" icon={faPlusCircle} /></Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#"><Link to="/message"><FontAwesomeIcon className="icon" icon={faEnvelope} /></Link></NavLink>
+                    <NavLink><Link to="/message"><FontAwesomeIcon className="icon" icon={faEnvelope} /></Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#"><Link to="/profil"><FontAwesomeIcon className="icon" icon={faUserAlt} /></Link></NavLink>
+                    <NavLink><Link to="/profil"><FontAwesomeIcon className="icon" icon={faUserAlt} /></Link></NavLink>
                 </NavItem>
             </Nav>
             <Switch>
