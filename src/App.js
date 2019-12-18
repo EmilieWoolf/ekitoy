@@ -1,9 +1,20 @@
 import React from 'react';
+import NavbarFoot from './components/NavbarFoot';
+import NavbarHead from './components/NavbarHead';
+import './App.css';
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Router>
+      <div className="App">
+        <NavbarHead />
+        <NavbarFoot />
+      </div>
+
+    </Router>
   );
 }
 
