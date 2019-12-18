@@ -3,6 +3,8 @@ import NavbarFoot from './components/NavbarFoot';
 import NavbarHead from './components/NavbarHead';
 import DescriptionArticle from './components/DescriptionArticle';
 import ProfilUtilisateur from './components/ProfilUtilisateur';
+import Portemonnaie from './components/Portemonnaie';
+import Association from './components/Association';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -16,10 +18,10 @@ function App() {
         <NavbarHead />        
         <DescriptionArticle />
         <ProfilUtilisateur />
+        <Portemonnaie />
+        <Association />
         <NavbarFoot />
-
       </div>
-
     </Router>
   );
 }

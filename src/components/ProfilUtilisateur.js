@@ -14,7 +14,7 @@ export default class ProfilUtilisateur extends Component {
                     <img src={iconuser} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
                     <h5>Jonathan</h5>
                 </div>
-                <div style={{textAlign:"left", marginLeft:"4%"}}>
+                <div style={{textAlign:"left", marginLeft:"4%", margin:"auto"}}>
                     <p style={{border:"1px solid grey", borderRadius:"10px", padding:"2px"}}><FaHeart/> Favoris</p>
                     <p style={{border:"1px solid grey", borderRadius:"10px", padding:"2px"}}><GiWallet/> Mon porte monnaie</p>
                     <p style={{border:"1px solid grey", borderRadius:"10px", padding:"2px"}}><AiFillShopping/> Mes ventes et achats</p>
