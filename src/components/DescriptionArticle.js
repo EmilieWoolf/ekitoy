@@ -34,6 +34,10 @@ export default class DescriptionArticle extends Component {
                     <button style={{backgroundColor:"#ccc", borderRadius:"10px", width:"201px", padding:"10px", fontSize:"20px"}}>Acheter</button>
                     </div>
                 </div>
+                <div style={{textAlign:"left", marginLeft:"4%"}}>
+                    <h2>PRESENTATION DE L'ARTICLE</h2>
+                    <p>Sublime barbie avec son pantalon imitation cuir argenté et ses différentes perruques de rock star</p>
+                </div>
                 
             </div>
             );
