@@ -1,28 +1,16 @@
 import React from 'react';
-import NavbarFoot from './components/NavbarFoot';
-import NavbarHead from './components/NavbarHead';
-import DescriptionArticle from './components/DescriptionArticle';
-import ProfilUtilisateur from './components/ProfilUtilisateur';
-import Portemonnaie from './components/Portemonnaie';
-import Association from './components/Association';
+import Navbar from './components/navbar';
+import Message from './components/Message';
 import './App.css';
-import {
-  BrowserRouter as Router,
-} from "react-router-dom";
 
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <NavbarHead />        
-        <DescriptionArticle />
-        <ProfilUtilisateur />
-        <Portemonnaie />
-        <Association />
-        <NavbarFoot />
-      </div>
-    </Router>
+  
+    <div className="App">
+      <Message />
+      <Navbar />
+    </div>
   );
 }
 

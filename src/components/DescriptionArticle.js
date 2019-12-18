@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { FaLongArrowAltLeft } from 'react-icons/fa';
-import barbie from '../img/barbie.jpeg';
-import barbie_1 from '../img/barbie_1.jpeg';
-import barbie_2 from '../img/barbie_2.jpeg';
+import barbie from '../IMG/barbie.jpeg';
+import barbie_1 from '../IMG/barbie_1.jpeg';
+import barbie_2 from '../IMG/barbie_2.jpeg';
 
 export default class DescriptionArticle extends Component {
 
