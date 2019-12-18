@@ -1,6 +1,7 @@
 import React from 'react';
 import NavbarFoot from './components/NavbarFoot';
 import NavbarHead from './components/NavbarHead';
+import DescriptionArticle from './components/DescriptionArticle';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <NavbarHead />
         <NavbarFoot />
+        <DescriptionArticle />
       </div>
 
     </Router>
