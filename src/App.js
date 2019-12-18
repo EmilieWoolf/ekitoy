@@ -1,42 +1,17 @@
 import React from 'react';
+import Navbar from './components/navbar'
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="App">
-    <div class="snowflakes" aria-hidden="true">
-    <div class="snowflake">
-    ❅
-    </div>
-    <div class="snowflake">
-    ❅
-    </div>
-    <div class="snowflake">
-    ❆
-    </div>
-    <div class="snowflake">
-    ❄
-    </div>
-    <div class="snowflake">
-    ❅
-    </div>
-    <div class="snowflake">
-    ❆
-    </div>
-    <div class="snowflake">
-    ❄
-    </div>
-    <div class="snowflake">
-    ❅
-    </div>
-    <div class="snowflake">
-    ❆
-    </div>
-    <div class="snowflake">
-    ❄
-    </div>
-    </div>
-  </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+      </div>
+    </Router>
   );
 }
 
