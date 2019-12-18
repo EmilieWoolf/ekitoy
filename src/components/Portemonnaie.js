@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
 import { FaLongArrowAltLeft } from 'react-icons/fa';
 import { IoMdCog } from 'react-icons/io';
+import './Association.css'
 
 export default class Portemonnaie extends Component {
 
     render() {
         return (
             <div>
-                <div className="container" style={{display:"flex", flexDirection:"row", justifyContent:"center", alignContent:"space-between"}}>
-                    <button style={{fontSize:"40px"}}><FaLongArrowAltLeft/></button>
-                    <h5 style={{marginTop:"22px"}}>Mon porte monnaie</h5>
-                    <button style={{fontSize:"40px"}}><IoMdCog/></button>
+                <div className="flex-container" style={{display:"flex", flexDirection:"auto", justifyContent:"center", alignContent:"space-between"}}>
+                    <button className="item auto" style={{fontSize:"40px"}}><FaLongArrowAltLeft/></button>
+                    <h5 className="item auto" style={{marginTop:"22px", fontSize:"20px"}}>Mon porte monnaie</h5>
+                    <button className="item auto" style={{fontSize:"40px", color:"#9a54fa"}}><IoMdCog/></button>
                 </div>
-                <div>
+                <div className="centre">
                     <h1>0,00€</h1>
-                    <h3>Montant disponible</h3>
-                    <button style={{backgroundColor:"#4a90e2", borderRadius:"10px", width:"50%", margin:"10px", padding:"5px", fontSize:"20px"}}>Transférer</button>
+                    <h4>Montant disponible</h4>
+                    <button style={{backgroundColor:"#9a54fa", borderRadius:"10px", width:"50%", margin:"10px", padding:"6px", fontSize:"20px"}}>Transférer</button>
                 </div>
             </div>
             );

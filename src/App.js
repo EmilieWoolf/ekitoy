@@ -1,15 +1,14 @@
 import React from 'react';
 import Navbar from './components/navbar';
-import Message from './components/Message';
-import Association from './components/Association';
 import './App.css';
+import Portemonnaie from './components/Portemonnaie';
 
 
 function App() {
   return (
   
     <div className="App">
-      <Association />
+      <Portemonnaie />
       <Navbar />
     </div>
   );
