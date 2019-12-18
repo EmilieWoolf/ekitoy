@@ -28,7 +28,7 @@ export default class DescriptionArticle extends Component {
                 </div>
                 <div style={{textAlign: "left", marginLeft:"4%"}}>                    
                     <h1>Barbie ever flex</h1>
-                        <div className="container" style={{display: "flex", flexDirection:"row"}}>
+                        <div className="container" style={{display: "flex", flexDirection:"row", marginRight:"10px"}}>
                             <h2>Bon état •</h2>
                             <h2 style={{color:"pink", marginLeft:"2%"}}>Barbie</h2>
                         </div>                    

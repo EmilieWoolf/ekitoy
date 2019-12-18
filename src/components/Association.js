@@ -11,17 +11,16 @@ export default class Association extends Component {
                     <h5 style={{marginTop:"22px"}}>Mon association</h5>
                 </div>
                 <div>
-                    <form style={{border:"1px solid #ccc", width:"50%", borderRadius:"10px", margin:"auto"}}>
-                        <select>
-                            <option>Emmaüs</option>
-                            <option>Restaurants du coeur</option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                        </select>
-                    </form>    
+                    <select>
+                        <option>Emmaüs</option>
+                        <option>Restaurants du coeur</option>
+                        <option>Greenpeace</option>
+                        <option>SPA</option>
+                        <option>Sea Sheperd</option>
+                        <option></option>
+                    </select>
                 </div>
+                <button style={{backgroundColor:"#4a90e2", borderRadius:"10px", width:"50%", margin:"10px", padding:"5px", fontSize:"20px"}}>Enregistrer</button>
             </div>
             );
         }

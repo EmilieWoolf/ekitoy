@@ -15,7 +15,7 @@ export default class Portemonnaie extends Component {
                 <div>
                     <h1>0,00€</h1>
                     <h3>Montant disponible</h3>
-                    <button style={{backgroundColor:"#4a90e2", borderRadius:"10px", width:"50%", margin:"10px", padding:"10px", fontSize:"20px"}}>Transférer</button>
+                    <button style={{backgroundColor:"#4a90e2", borderRadius:"10px", width:"50%", margin:"10px", padding:"5px", fontSize:"20px"}}>Transférer</button>
                 </div>
             </div>
             );
