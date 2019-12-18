@@ -24,9 +24,9 @@ const ToyList = ({ toys }) => {
         {toys.map(toy => 
             <div>
                 <p>{toy.name}</p> 
-                </div>
-                )}
+            </div>
+        )}
     </div>
 )};
 
-export default connect(mstp,mapDispatchToProps)(ToyList)
+export default connect(mstp, mapDispatchToProps)(ToyList)
