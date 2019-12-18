@@ -2,6 +2,7 @@ import React from 'react';
 import NavbarFoot from './components/NavbarFoot';
 import NavbarHead from './components/NavbarHead';
 import DescriptionArticle from './components/DescriptionArticle';
+import ProfilUtilisateur from './components/ProfilUtilisateur';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -12,9 +13,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavbarHead />
-        <NavbarFoot />
+        <NavbarHead />        
         <DescriptionArticle />
+        <ProfilUtilisateur />
+        <NavbarFoot />
+
       </div>
 
     </Router>
