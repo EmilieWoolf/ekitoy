@@ -5,6 +5,19 @@ const mstp = state => ({
     toys: state.toys
 });
 
+const mapDispatchToProps = dispatch => {
+    return {
+      updateToys : function () {
+        return (dispatch) => {
+          axios.get("/api/toys")
+            .then(result => {
+            dispatch({type: "UPDATE_TOYS", payload: result.data});
+          })
+        };
+      }
+    }
+  }
+
 const ToyList = ({ toys }) => {
     return (
     <div>
@@ -16,4 +29,4 @@ const ToyList = ({ toys }) => {
     </div>
 )};
 
-export default connect (mstp)(ToyList);
+export default connect(mstp,mapDispatchToProps)(ToyList)
