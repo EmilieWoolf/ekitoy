@@ -9,7 +9,6 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Portemonnaie />
         <Navbar />
       </div>
     </Provider>
