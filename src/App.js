@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import Navbar from './components/navbar';
-import './App.css';
-=======
->>>>>>> 1f2152b7dbd75daf846f985689fd3e686b5b126e
 import reducer from './reducers/reducer';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -15,6 +9,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <Portemonnaie />
         <Navbar />
       </div>
     </Provider>
