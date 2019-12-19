@@ -26,13 +26,13 @@ export default class ProfilUtilisateur extends Component {
                     </div>     
                 </div>
 
-                <div style={{textAlign:"left", marginLeft:"4%", margin:"auto"}}>
-                    <h3 style={{border:"1px solid grey", padding:"13px", backgroundColor:"#eee9c6"}}><FaHeart/> Favoris</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><GiWallet/> Mon porte monnaie</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><AiFillShopping/> Mes ventes et achats</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><FaHandHoldingHeart/> Mon association</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><GiThreeFriends/> Inviter des amis</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><IoMdHelpCircle/> Centre d'aide</h3>
+                <div style={{textAlign:"left", margin:"auto"}}>
+                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><FaHeart/> Favoris</h3>
+                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><GiWallet/> Mon porte monnaie</h3>
+                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><AiFillShopping/> Mes ventes et achats</h3>
+                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><FaHandHoldingHeart/> Mon association</h3>
+                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><GiThreeFriends/> Inviter des amis</h3>
+                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><IoMdHelpCircle/> Centre d'aide</h3>
                 </div>
             </div>
             );
