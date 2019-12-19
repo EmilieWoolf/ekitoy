@@ -7,3 +7,5 @@ database :  'ekitoy', // le nom de la base de données
 
 });
 module.exports = connection;
+
+ 

@@ -46,6 +46,17 @@ CREATE TABLE IF NOT EXISTS `ekitoy`.`users` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+ALTER TABLE `ekitoy`.`users` CHANGE `lastname` `lastname` VARCHAR(255) NULL;
+ALTER TABLE `ekitoy`.`users` CHANGE `firstname` `firstname` VARCHAR(255) NULL;
+ALTER TABLE `ekitoy`.`users` CHANGE `pseudo` `pseudo` VARCHAR(255) NULL;
+ALTER TABLE `ekitoy`.`users` DROP PRIMARY KEY, ADD PRIMARY KEY(`id`);
+ALTER TABLE `ekitoy`.`users` CHANGE `basket_id` `basket_id` INT NULL;
+
+
+INSERT INTO `ekitoy`.`users` (`id`, `password`, `mail`) VALUES (1, 'password', 'momo@gmail.com');
+
+ALTER TABLE `ekitoy`.`users` ADD PRIMARY KEY (`id`);
+ALTER TABLE `ekitoy`.`users` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 
 -- -----------------------------------------------------
 -- Table `ekitoy`.`toy`

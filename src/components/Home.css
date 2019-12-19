@@ -1,0 +1,11 @@
+.display-3{
+    font-family: 'barbie',
+}
+button {
+    padding : 15px;
+}
+/* 
+@font-face {
+	font-family: "barbie";
+	src: url('./font/barbie.ttf')format("truetype");;
+} */
