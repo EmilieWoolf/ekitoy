@@ -5,12 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSearch, faPlusCircle, faEnvelope, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import DescriptionArticle from './DescriptionArticle';
+// import DescriptionArticle from './DescriptionArticle';
+// import Search from './search';
+import ToyList from './userslist'
 // import Home from './components/home.js';
 // import Search from './components/search.js';
-// import Sell from './components/sell.js';
-// import Message from './components/message.js';
-// import Profil from './components/profil.js';
+import NewToyForm from './NewToyForm.jsx';
+import Message from './Message.js';
+import ProfilUtilisateur from './ProfilUtilisateur.js';
+
 
 const Navbar = () => {
   return (
@@ -18,36 +21,36 @@ const Navbar = () => {
         <div>
             <Nav className="StickyNavbar">
                 <NavItem>
-                    <NavLink href="#"><Link to="/home"><FontAwesomeIcon className="icon" icon={faHome} /></Link></NavLink>
+                    <NavLink><Link to="/home"><FontAwesomeIcon className="icon" icon={faHome} /></Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#"><Link to="/search"><FontAwesomeIcon className="icon" icon={faSearch} /></Link></NavLink>
+                    <NavLink><Link to="/search"><FontAwesomeIcon className="icon" icon={faSearch} /></Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#"><Link to="/sell"><FontAwesomeIcon className="iconSup" icon={faPlusCircle} /></Link></NavLink>
+                    <NavLink><Link to="/vendre"><FontAwesomeIcon className="iconSup" icon={faPlusCircle} /></Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#"><Link to="/message"><FontAwesomeIcon className="icon" icon={faEnvelope} /></Link></NavLink>
+                    <NavLink><Link to="/message"><FontAwesomeIcon className="icon" icon={faEnvelope} /></Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#"><Link to="/profil"><FontAwesomeIcon className="icon" icon={faUserAlt} /></Link></NavLink>
+                    <NavLink><Link to="/profil"><FontAwesomeIcon className="icon" icon={faUserAlt} /></Link></NavLink>
                 </NavItem>
             </Nav>
             <Switch>
-                {/* <Route path="/">
-                    <Home />
+                <Route path="/home">
+                    <ToyList />
                 </Route>
                 <Route path="/search">
                     <Search />
                 </Route>
-                <Route path="/sell">
-                    <Sell />
+                <Route path="/vendre">
+                    <NewToyForm />
                 </Route>
                 <Route path="/message">
                     <Message />
-                </Route> */}
+                </Route>
                 <Route path="/profil">
-                    <DescriptionArticle />
+                    <ProfilUtilisateur />
                 </Route>
             </Switch>
         </div>
