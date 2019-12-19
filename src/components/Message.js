@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import user1 from '../img/user1.jpg';
-import user2 from '../img/user2.jpg';
-import user3 from '../img/user3.jpg';
-import user4 from '../img/user4.jpg';
-import user5 from '../img/user5.jpg';
-import user6 from '../img/user6.jpg';
+import user1 from '../IMG/user1.jpg';
+import user2 from '../IMG/user2.jpg';
+import user3 from '../IMG/user3.jpg';
+import user4 from '../IMG/user4.jpg';
+import user5 from '../IMG/user5.jpg';
+import user6 from '../IMG/user6.jpg';
 import './Association.css';
 
 export default class Message extends Component {
