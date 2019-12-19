@@ -11,7 +11,7 @@ const reducer = (state = initState, action) => {
     switch (action.type) {
         case 'UPDATE_TOYS':
             const { toys } = state;
-            return {...state, toys: [action.payload]}
+            return state;
         default:
             return state;
     }

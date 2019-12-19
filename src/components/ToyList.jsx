@@ -1,15 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import axios from 'axios';
 
 const mstp = state => ({
     toys: state.toys
 });
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
     return {
       updateToys : function () {
         return (dispatch) => {
-          axios.get("/api/toys")
+          axios.get("/api/toy")
             .then(result => {
             dispatch({type: "UPDATE_TOYS", payload: result.data});
           })
@@ -18,7 +19,7 @@ const mapDispatchToProps = dispatch => {
     }
   }
 
-const ToyList = ({ toys }) => {
+const ToyList = ({toys}) => {
     return (
     <div>
         {toys.map(toy => 
@@ -29,4 +30,4 @@ const ToyList = ({ toys }) => {
     </div>
 )};
 
-export default connect(mstp, mapDispatchToProps)(ToyList)
+export default connect(mstp)(ToyList)

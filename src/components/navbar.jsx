@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import ToyList from './ToyList';
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSearch, faPlusCircle, faEnvelope, faUserAlt } from '@fortawesome/free-solid-svg-icons'
@@ -16,6 +17,7 @@ const Navbar = () => {
   return (
     <Router>
         <div>
+            <ToyList />
             <Nav className="StickyNavbar">
                 <NavItem>
                     <NavLink><Link to="/home"><FontAwesomeIcon className="icon" icon={faHome} /></Link></NavLink>
