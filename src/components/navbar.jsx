@@ -5,12 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSearch, faPlusCircle, faEnvelope, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import DescriptionArticle from './DescriptionArticle';
+// import DescriptionArticle from './DescriptionArticle';
+// import Search from './search';
+import ToyList from './userslist'
 // import Home from './components/home.js';
 // import Search from './components/search.js';
 // import Sell from './components/sell.js';
 // import Message from './components/message.js';
 // import Profil from './components/profil.js';
+
 
 const Navbar = () => {
   return (
@@ -34,21 +37,18 @@ const Navbar = () => {
                 </NavItem>
             </Nav>
             <Switch>
-                {/* <Route path="/">
-                    <Home />
+                <Route path="/home">
+                    <ToyList />
                 </Route>
-                <Route path="/search">
+                {/* <Route path="/search">
                     <Search />
-                </Route>
-                <Route path="/sell">
+                </Route> */}
+                {/* <Route path="/sell">
                     <Sell />
                 </Route>
                 <Route path="/message">
                     <Message />
                 </Route> */}
-                <Route path="/profil">
-                    <DescriptionArticle />
-                </Route>
             </Switch>
         </div>
     </Router>
