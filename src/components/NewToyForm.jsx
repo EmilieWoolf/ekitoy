@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 const NewToyForm = () => {
     return (
         <div>
-            <h1>Vends ton jouet</h1>
+            <h2 style={{marginTop:"30px", marginBottom:"30px", textAlign:"center"}}>Vendre un article</h2>
             <form>
                 <div>
                     <label for="titre">Titre</label>{'  '}
