@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSearch, faPlusCircle, faEnvelope, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import DescriptionArticle from './DescriptionArticle';
 // import Home from './components/home.js';
 // import Search from './components/search.js';
 import NewToyForm from './NewToyForm.jsx';
