@@ -23,8 +23,7 @@ const ModalHomeConnection = (props) => {
          <Admin/>
         </ModalBody>
         <ModalFooter>
-          <Button style = {{ background : "#9600fa"}} onClick={toggle}>Login</Button>{' '}
-          <ModalProfileConnection/>
+         
         </ModalFooter>
       </Modal>
     </div>

@@ -23,7 +23,7 @@ const ModalProfileConnection = (props) => {
                 <FormGroup>
                 </FormGroup>
                 {' '}
-                <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
+                <Button onClick={toggle} style={{ background : "grey"}}>{buttonLabel} Create your account </Button>
             </Form>
             <Modal isOpen={modal} toggle={toggle} className={className} unmountOnClose={unmountOnClose}>
                 <ModalHeader toggle={toggle}>Create Your Account</ModalHeader>

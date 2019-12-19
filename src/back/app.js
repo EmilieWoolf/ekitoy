@@ -22,12 +22,12 @@ app.get('/', function(request, response) {
 
 app.post('/auth', function(request, response) {
     console.log(request.body)
-	const username = request.body.username;
+	const email = request.body.email;
 	const password = request.body.password;
-	if (username && password) {
-		connection.query('SELECT * FROM users WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
+	if (email && password) {
+		connection.query('SELECT * FROM users WHERE mail = ? AND password = ?', [email, password], function(error, results, fields) {
 			if (results.length > 0) {
-				response.send(username);
+				response.send({email});
 			} else {
 				response.send('Incorrect Username and/or Password!');
 			}			
