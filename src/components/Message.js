@@ -66,25 +66,6 @@ export default class Message extends Component {
                     </div>
                 </div>
 
-                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid white", marginBottom:"13px"}}>
-                    <div className="roundedImage" style={{marginTop:"10px"}}>
-                        <img src={user6} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
-                    </div>
-                    <div style={{marginTop:"10px"}}>
-                        <h5 style={{textAlign:"left", marginLeft:"15px"}}>Jean</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
-                    </div>
-                </div>
-
-                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid white", marginBottom:"13px"}}>
-                    <div className="roundedImage" style={{marginTop:"10px"}}>
-                        <img src={iconuser} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
-                    </div>
-                    <div style={{marginTop:"10px"}}>
-                        <h5 style={{textAlign:"left", marginLeft:"15px"}}>Laura</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
-                    </div>
-                </div>
 
             </div>
             );
