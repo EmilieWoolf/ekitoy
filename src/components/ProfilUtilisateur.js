@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import iconuser from '../img/iconuser.png'
+import iconuser from '../img/iconuser.png'  
 import { FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
 import { GiWallet, GiThreeFriends } from 'react-icons/gi';
 import { AiFillShopping } from 'react-icons/ai';
