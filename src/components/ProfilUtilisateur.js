@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import iconuser from '../IMG/iconuser.png';
 import { FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
 import { GiWallet, GiThreeFriends } from 'react-icons/gi';
 import { AiFillShopping } from 'react-icons/ai';
 import { IoMdHelpCircle, IoMdStar, IoMdStarHalf } from 'react-icons/io';
-import user7 from '../IMG/user7.jpg'
+import user7 from '../img/user7.jpg'
 
 export default class ProfilUtilisateur extends Component {
 
@@ -27,12 +26,12 @@ export default class ProfilUtilisateur extends Component {
                 </div>
 
                 <div style={{textAlign:"left", margin:"auto"}}>
-                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><FaHeart/> Favoris</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><GiWallet/> Mon porte monnaie</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><AiFillShopping/> Mes ventes et achats</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><FaHandHoldingHeart/> Mon association</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><GiThreeFriends/> Inviter des amis</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#eee9c6", width:"98%"}}><IoMdHelpCircle/> Centre d'aide</h3>
+                    <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><FaHeart/>  Favoris</h3>
+                    <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><GiWallet/>  Mon porte monnaie</h3>
+                    <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><AiFillShopping/>  Mes ventes et achats</h3>
+                    <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><FaHandHoldingHeart/>  Mon association</h3>
+                    <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><GiThreeFriends/>  Inviter des amis</h3>
+                    <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><IoMdHelpCircle/>  Centre d'aide</h3>
                 </div>
             </div>
             );

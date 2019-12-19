@@ -1,0 +1,12 @@
+.inputZone {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    width: 97vw;
+    font-size: 3em;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.bgColor {
+    background-color: rgb(236, 179, 56);
+}

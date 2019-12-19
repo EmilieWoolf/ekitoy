@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import user1 from '../IMG/user1.jpg';
-import user2 from '../IMG/user2.jpg';
-import user3 from '../IMG/user3.jpg';
-import user4 from '../IMG/user4.jpg';
-import user5 from '../IMG/user5.jpg';
+import user1 from '../img/user1.jpg';
+import user2 from '../img/user2.jpg';
+import user3 from '../img/user3.jpg';
+import user4 from '../img/user4.jpg';
+import user5 from '../img/user5.jpg';
 import './Association.css';
 
 export default class Message extends Component {
@@ -18,7 +18,7 @@ export default class Message extends Component {
                     </div>
                     <div>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Jonathan</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Pouvez vous me donner plus d'informations sur le produit ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Pouvez-vous me donner plus d'informations sur le produit ?</p>
                     </div>
                 </div>
 
@@ -28,7 +28,7 @@ export default class Message extends Component {
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Marie</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez-vous pensé de la barbie ?</p>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@ export default class Message extends Component {
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Laura</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>VARCHAAAAAR</p>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@ export default class Message extends Component {
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Lily</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez-vous pensé de la barbie ?</p>
                     </div>
                 </div>
 
