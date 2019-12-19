@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
-import iconuser from '../IMG/iconuser.png'  
->>>>>>> dev
 import { FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
 import { GiWallet, GiThreeFriends } from 'react-icons/gi';
 import { AiFillShopping } from 'react-icons/ai';
 import { IoMdHelpCircle, IoMdStar, IoMdStarHalf } from 'react-icons/io';
-import user7 from '../IMG/user7.jpg'
+import user7 from '../img/user7.jpg'
 
 export default class ProfilUtilisateur extends Component {
 

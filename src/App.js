@@ -10,18 +10,11 @@ const store = createStore(reducer, applyMiddleware(thunk))
 
 function App() {
   return (
-<<<<<<< HEAD
+    <Provider store={store}> 
     <div className="App">
       <Navbar />
     </div>
-=======
-    <Provider store={store} >
-      <div className="App">
-        <Navbar />
-        <Home />
-      </div>
-      </Provider>
->>>>>>> dev
+    </Provider>
   );
 }
 
