@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: rgb(236, 179, 56);
 }
 
 .ToyCard {
@@ -13,6 +12,7 @@
     border: 1px solid #000000;
     border-radius: 10px;
     font-size: 1.2em;
+    height: auto;
     background-color: white;
 }
 
@@ -37,6 +37,7 @@ span.is-favorite {
 }
 
 img {
-    max-width: 40vw;
+    max-width: 70vw;
     border-radius: 10px;
+    margin:10px !important;
 }
