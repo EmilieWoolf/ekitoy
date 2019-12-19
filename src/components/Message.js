@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import iconuser from '../IMG/iconuser.png';
 import user1 from '../IMG/user1.jpg';
 import user2 from '../IMG/user2.jpg';
 import user3 from '../IMG/user3.jpg';
