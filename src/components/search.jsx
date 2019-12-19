@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import SearchResults from 'react-filter-search';
+// import SearchResults from 'react-filter-search';
 import './search.css'
+import ToyList from './userslist'
  
 export default class Search extends Component {
   constructor(props) {
@@ -22,9 +23,9 @@ export default class Search extends Component {
   render() {
     const { data, value } = this.state;
     return (
-      <div>
+      <div className="bgColor">
         <input className="inputZone" type="text" value={value} onChange={this.handleChange} />
-        <SearchResults
+        {/* <SearchResults
           value={value}
           data={data}
           renderResults={results => (
@@ -37,7 +38,8 @@ export default class Search extends Component {
               ))}
             </div>
           )}
-        />
+        /> */}
+        <ToyList />
       </div>
     );
   }

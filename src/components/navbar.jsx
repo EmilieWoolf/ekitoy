@@ -4,12 +4,8 @@ import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSearch, faPlusCircle, faEnvelope, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-// import DescriptionArticle from './DescriptionArticle';
-// import Search from './search';
 import ToyList from './userslist'
-// import Home from './components/home.js';
-// import Search from './components/search.js';
+import Search from './search';
 import NewToyForm from './NewToyForm.jsx';
 import Message from './Message.js';
 import ProfilUtilisateur from './ProfilUtilisateur.js';
