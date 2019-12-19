@@ -6,17 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSearch, faPlusCircle, faEnvelope, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import DescriptionArticle from './DescriptionArticle';
+// import Search from './search';
+// import ToyList from './userslist'
 // import Home from './components/home.js';
-// import Search from './components/search.js';
+import Search from './search.jsx';
 import NewToyForm from './NewToyForm.jsx';
 import Message from './Message.js';
 import ProfilUtilisateur from './ProfilUtilisateur.js';
+
 
 const Navbar = () => {
   return (
     <Router>
         <div>
-            <ToyList />
             <Nav className="StickyNavbar">
                 <NavItem>
                     <NavLink><Link to="/home"><FontAwesomeIcon className="icon" icon={faHome} /></Link></NavLink>
@@ -35,12 +38,12 @@ const Navbar = () => {
                 </NavItem>
             </Nav>
             <Switch>
-                {/* <Route path="/">
-                    <Home />
+                <Route path="/home">
+                    <ToyList />
                 </Route>
                 <Route path="/search">
                     <Search />
-                </Route>*/}
+                </Route>
                 <Route path="/vendre">
                     <NewToyForm />
                 </Route>
@@ -50,10 +53,14 @@ const Navbar = () => {
                 <Route path="/profil">
                     <ProfilUtilisateur />
                 </Route>
+                <Route path="/toys/:toyId">
+                    <DescriptionArticle />
+                </Route>
             </Switch>
         </div>
     </Router>
   );
 }
+
 
 export default Navbar;

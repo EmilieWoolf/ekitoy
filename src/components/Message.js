@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
 import iconuser from '../IMG/iconuser.png';
+import user1 from '../IMG/user1.jpg';
+import user2 from '../IMG/user2.jpg';
+import user3 from '../IMG/user3.jpg';
+import user4 from '../IMG/user4.jpg';
+import user5 from '../IMG/user5.jpg';
+import user6 from '../IMG/user6.jpg';
+import './Association.css';
 
 export default class Message extends Component {
 
     render() {
         return (
-            <div>
-                <h1 style={{marginBottom:"30px"}}>Messages</h1>
+            <div style={{backgroundColor:"#eeebda"}}>
+                <h2 style={{marginTop:"30px", marginBottom:"30px", textAlign:"center"}}>Messages</h2>
                 <div className="container" style={{display:"flex", flexDirection:"row"}}>
-                    <div>
-                        <img src={iconuser} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
+                    <div className="roundedImage">
+                        <img src={user3} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
                     </div>
                     <div>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Jonathan</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Pouvez vous me donner plus d'informations à propos du produit ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Pouvez vous me donner plus d'informations sur le produit ?</p>
                     </div>
                 </div>
 
-                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid grey", marginBottom:"13px"}}>
-                    <div style={{marginTop:"10px"}}>
-                        <img src={iconuser} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
+                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid white", marginBottom:"13px"}}>
+                    <div className="roundedImage" style={{marginTop:"10px"}}>
+                        <img src={user1} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Marie</h5>
@@ -28,26 +35,38 @@ export default class Message extends Component {
                 </div>
 
 
-                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid grey", marginBottom:"13px"}}>
-                    <div style={{marginTop:"10px"}}>
-                        <img src={iconuser} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
+                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid white", marginBottom:"13px"}}>
+                    <div className="roundedImage" style={{marginTop:"10px"}}>
+                        <img src={user2} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Yasmine</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Est-il possible de baisser le prix à 5€ ?</p>
                     </div>
                 </div>
 
 
-                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid grey", marginBottom:"13px"}}>
-                    <div style={{marginTop:"10px"}}>
-                        <img src={iconuser} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
+                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid white", marginBottom:"13px"}}>
+                    <div className="roundedImage" style={{marginTop:"10px"}}>
+                        <img src={user4} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Laura</h5>
                         <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
                     </div>
                 </div>
+
+                <div className="container" style={{display:"flex", flexDirection:"row", borderTop:"1px solid white", marginBottom:"13px"}}>
+                    <div className="roundedImage" style={{marginTop:"10px"}}>
+                        <img src={user5} alt="Icône de l'utilisateur" style={{width:"80px"}}></img>
+                    </div>
+                    <div style={{marginTop:"10px"}}>
+                        <h5 style={{textAlign:"left", marginLeft:"15px"}}>Lily</h5>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
+                    </div>
+                </div>
+
+
             </div>
             );
         }

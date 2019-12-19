@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {Link} from 'react-router-dom';
 import {updateToys} from '../actions/updateToys';
 
 const mstp = state => {
@@ -23,7 +24,7 @@ class ToyList extends React.Component {
 
   componentDidMount() {
     this.props.updateToysList()
-    console.log(this.props.toys)
+    console.log(this.props.toys);
   }
 
   render() {
@@ -32,7 +33,7 @@ class ToyList extends React.Component {
       <div>
         {toys.map(toy =>
           <div>
-            <p>{toy.name}</p>
+            <p><Link to={`/toys/${toy.id}`}>{toy.name}</Link></p>
           </div>
         )}
       </div>
