@@ -5,10 +5,32 @@ import { FaLongArrowAltLeft } from 'react-icons/fa';
 import barbie from '../IMG/barbie.jpeg';
 import barbie_1 from '../IMG/barbie_1.jpeg';
 import barbie_2 from '../IMG/barbie_2.jpeg';
+import {connect} from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import {updateToys} from '../actions/updateToys';
 
-export default class DescriptionArticle extends Component {
+const mstp = state => {
+    return {
+      toys: state.toys
+    }
+  };
 
+class DescriptionArticle extends Component {
+
+    componentDidMount() {
+        const {toys} = this.props;
+        if (toys === []) {
+            this.props.updateToysList()
+        }
+    }
+    
     render() {
+        const { toys } = this.props;
+        const { toyId } = this.props.match.params;
+        console.log(toys);
+        const toy = toys.find(toy => toy.id == toyId);
+        console.log(toy);
+
         return (
             <div>
                 <Carousel>
@@ -27,12 +49,12 @@ export default class DescriptionArticle extends Component {
                     <button style={{fontSize:"40px"}}>❤️</button>
                 </div>
                 <div style={{textAlign: "left", marginLeft:"4%"}}>                    
-                    <h1>Barbie ever flex</h1>
+                    <h1>{toy.name}</h1>
                         <div className="container" style={{display: "flex", flexDirection:"row", marginRight:"10px"}}>
                             <h2>Bon état •</h2>
-                            <h2 style={{color:"pink", marginLeft:"2%"}}>Barbie</h2>
+                            <h2 style={{color:"pink", marginLeft:"2%"}}>{toy.name}</h2>
                         </div>                    
-                    <h3>12,00€</h3>
+                    <h3>{toys.price}</h3>
                 </div>
                 <div className="conteneur">
                     <div>
@@ -44,10 +66,12 @@ export default class DescriptionArticle extends Component {
                 </div>
                 <div style={{textAlign:"left", marginLeft:"4%"}}>
                     <h2>Présentation de l'article</h2>
-                    <p>Sublime barbie avec son pantalon imitation cuir argenté et ses différentes perruques de rock star</p>
+                    <p>{toy.description}</p>
                 </div>
             </div>
             );
         }
 
     }
+
+export default withRouter(connect(mstp)(DescriptionArticle));

@@ -4,6 +4,9 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const path = require('path');
 const connection = require('./conf');
+const port = 5000 ;
+
+app.use(express.json());
 
 
 const app = express();
@@ -51,5 +54,15 @@ app.get('/home', function (request, response) {
 	}
 	response.end();
 });
+app.get("/api/toy", (request, response) => { 
+  console.log('je passe par toy')
+    connection.query("SELECT * FROM toy", (err, rows) => {
+      if(err) {
+        console.log(err)
+        response.status(500).end()
+      }
+      else response.send(rows);
+    });
+  });
 
-app.listen(5000);
+app.listen({port});
