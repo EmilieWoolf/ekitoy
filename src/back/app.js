@@ -1,9 +1,9 @@
 const connection = require('./conf');
 const express = require ('express');
 const app = express();
-const port = 3000 ;
+const port = 5000 ;
 
-
+app.use(require("cors")())
 app.use(express.json());
 
 app.post("/", (request, response) => {
@@ -16,8 +16,13 @@ app.get("/api/users", (request, response) => {
   });
 });
 app.get("/api/toy", (request, response) => { 
+  console.log('je passe par toy')
     connection.query("SELECT * FROM toy", (err, rows) => {
-      response.send(rows);
+      if(err) {
+        console.log(err)
+        response.status(500).end()
+      }
+      else response.send(rows);
     });
   });
 

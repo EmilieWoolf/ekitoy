@@ -1,12 +1,11 @@
 import React from 'react';
-import Navbar from './components/navbar'
-import './App.css';
 import reducer from './reducers/reducer';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+import Navbar from '../src/components/navbar';
 
-const store = createStore(reducer, {}, compose(applyMiddleware(thunk)))
+const store = createStore(reducer, applyMiddleware(thunk))
 
 function App() {
   return (
@@ -19,3 +18,5 @@ function App() {
 }
 
 export default App;
+
+
