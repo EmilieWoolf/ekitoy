@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
+=======
 import iconuser from '../IMG/iconuser.png'  
+>>>>>>> dev
 import { FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
 import { GiWallet, GiThreeFriends } from 'react-icons/gi';
 import { AiFillShopping } from 'react-icons/ai';

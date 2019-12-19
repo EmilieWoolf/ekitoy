@@ -13,6 +13,7 @@ import DescriptionArticle from './DescriptionArticle';
 import Search from './search.jsx';
 import NewToyForm from './NewToyForm.jsx';
 import Message from './Message.js';
+import Home from './Home'
 import ProfilUtilisateur from './ProfilUtilisateur.js';
 
 
@@ -39,6 +40,7 @@ const Navbar = () => {
             </Nav>
             <Switch>
                 <Route path="/home">
+                    <Home />
                     <ToyList />
                 </Route>
                 <Route path="/search">

@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './components/navbar'
-import Home from './components/Home'
 import './App.css';
 import reducer from './reducers/reducer';
 import { Provider } from 'react-redux';
@@ -11,12 +10,18 @@ const store = createStore(reducer, applyMiddleware(thunk))
 
 function App() {
   return (
+<<<<<<< HEAD
+    <div className="App">
+      <Navbar />
+    </div>
+=======
     <Provider store={store} >
       <div className="App">
         <Navbar />
         <Home />
       </div>
       </Provider>
+>>>>>>> dev
   );
 }
 
