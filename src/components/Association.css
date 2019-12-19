@@ -1,3 +1,4 @@
+
 .centre{
     position:absolute;
     left: 50%;
@@ -24,3 +25,7 @@
   .auto {
     flex: auto;
   }
+
+.roundedImage{
+  clip-path: circle(37%);
+}
