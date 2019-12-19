@@ -1,6 +1,10 @@
 import React from 'react';
 import Navbar from './components/navbar'
 import './App.css';
+// import reducer from './reducers/reducer';
+// import { Provider } from 'react-redux';
+// import { createStore, applyMiddleware } from 'redux';
+// import thunk from 'redux-thunk';
 
 
 function App() {
@@ -12,3 +16,5 @@ function App() {
 }
 
 export default App;
+
+
