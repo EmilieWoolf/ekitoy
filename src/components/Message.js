@@ -19,7 +19,7 @@ export default class Message extends Component {
                     </div>
                     <div>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Jonathan</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Pouvez vous me donner plus d'informations sur le produit ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Pouvez-vous me donner plus d'informations sur le produit ?</p>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@ export default class Message extends Component {
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Marie</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez-vous pensé de la barbie ?</p>
                     </div>
                 </div>
 
@@ -51,7 +51,7 @@ export default class Message extends Component {
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Laura</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>VARCHAAAAAR</p>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@ export default class Message extends Component {
                     </div>
                     <div style={{marginTop:"10px"}}>
                         <h5 style={{textAlign:"left", marginLeft:"15px"}}>Lily</h5>
-                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez vous pensez de la barbie ?</p>
+                        <p style={{textAlign:"left", marginLeft:"15px"}}>Qu'avez-vous pensé de la barbie ?</p>
                     </div>
                 </div>
 
