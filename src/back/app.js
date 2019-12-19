@@ -1,24 +1,49 @@
+const mysql = require('mysql');
+const express = require('express');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const path = require('path');
 const connection = require('./conf');
-const express = require ('express');
+
+
 const app = express();
-const port = 3000 ;
+app.use(require('cors')())
+app.use(session({
+	secret: 'secret',
+	resave: true,
+	saveUninitialized: true
+}));
+app.use(bodyParser.urlencoded({extended : true}));
+app.use(bodyParser.json());
 
-
-app.use(express.json());
-
-app.post("/", (request, response) => {
-  response.json(request.body);
+app.get('/', function(request, response) {
+	response.sendFile(path.join(__dirname + '/Admin.js'));
 });
 
-app.get("/api/users", (request, response) => { 
-  connection.query("SELECT * FROM users", (err, rows) => {
-    response.send(rows);
-  });
+app.post('/auth', function(request, response) {
+    console.log(request.body)
+	const username = request.body.username;
+	const password = request.body.password;
+	if (username && password) {
+		connection.query('SELECT * FROM users WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
+			if (results.length > 0) {
+				response.send(username);
+			} else {
+				response.send('Incorrect Username and/or Password!');
+			}			
+		});
+	} else {
+		response.send('Please enter Username and Password!');
+	}
 });
-app.get("/api/toy", (request, response) => { 
-    connection.query("SELECT * FROM toy", (err, rows) => {
-      response.send(rows);
-    });
-  });
 
-app.listen(port, () => console.log(`server is runing on port ${port}`))
+app.get('/home', function(request, response) {
+	if (request.session.loggedin) {
+		response.send('Welcome back, ' + request.session.username + '!');
+	} else {
+		response.send('Please login to view this page!');
+	}
+	response.end();
+});
+
+app.listen(5000);

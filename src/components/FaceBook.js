@@ -26,7 +26,6 @@ class Facebook extends Component {
 
   render() {
     let fbContent;
-
     if (this.state.isLoggedIn) {
       fbContent = (
         <div
@@ -36,8 +35,7 @@ class Facebook extends Component {
             background: "#f4f4f4",
             padding: "20px"
           }}
-        >
-          <img src={this.state.picture} alt={this.state.name} />
+        ><img src={this.state.picture} alt={this.state.name} />
           <h2>Welcome {this.state.name}</h2>
           Email: {this.state.email}
         </div>
@@ -45,12 +43,13 @@ class Facebook extends Component {
     } else {
       fbContent = (
         <FacebookLogin
-          appId="189486938370592"
+          appId="2661972134030087"
           autoLoad={true}
           fields="name,email,picture"
           onClick={this.componentClicked}
-          callback={this.responseFacebook}
+          // callback={this.responseFacebook}
         />
+
       );
     }
 

@@ -29,23 +29,34 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `ekitoy`.`users`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ekitoy`.`users` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `lastname` VARCHAR(255) NOT NULL,
-  `firstname` VARCHAR(255) NOT NULL,
-  `pseudo` VARCHAR(255) NOT NULL,
-  `mail` VARCHAR(255) NOT NULL,
-  `password` VARCHAR(255) NULL,
-  `basket_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `basket_id`),
-  INDEX `fk_users_basket1_idx` (`basket_id` ASC) ,
-  CONSTRAINT `fk_users_basket1`
-    FOREIGN KEY (`basket_id`)
-    REFERENCES `ekitoy`.`basket` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+-- CREATE TABLE IF NOT EXISTS `ekitoy`.`users` (
+--   `id` INT NOT NULL AUTO_INCREMENT,
+--   `lastname` VARCHAR(255) NOT NULL,
+--   `firstname` VARCHAR(255) NOT NULL,
+--   `pseudo` VARCHAR(255) NOT NULL,
+--   `mail` VARCHAR(255) NOT NULL,
+--   `password` VARCHAR(255) NULL,
+--   `basket_id` INT NOT NULL,
+--   PRIMARY KEY (`id`, `basket_id`),
+--   INDEX `fk_users_basket1_idx` (`basket_id` ASC) ,
+--   CONSTRAINT `fk_users_basket1`
+--     FOREIGN KEY (`basket_id`)
+--     REFERENCES `ekitoy`.`basket` (`id`)
+--     ON DELETE NO ACTION
+--     ON UPDATE NO ACTION)
+-- ENGINE = InnoDB;
 
+CREATE TABLE IF NOT EXISTS `ekitoy`.`users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(100) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `ekitoy`.`users` (`id`, `username`, `password`, `email`) VALUES (1, 'username', 'password', 'momo@gmail.com');
+
+ALTER TABLE `ekitoy`.`users` ADD PRIMARY KEY (`id`);
+ALTER TABLE `ekitoy`.`users` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 
 -- -----------------------------------------------------
 -- Table `ekitoy`.`toy`
