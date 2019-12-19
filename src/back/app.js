@@ -8,6 +8,7 @@ const port = 5000 ;
 
 app.use(express.json());
 
+app.use(express.static('public'));
 
 const app = express();
 app.use(require('cors')())
