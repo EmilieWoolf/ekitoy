@@ -1,45 +1,32 @@
 import React from 'react';
 import './toycard.css';
-import Modal from 'react-modal';
-import ModalCardToy from './ModalCardToy'
+import { FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
+import { GiWallet, GiThreeFriends } from 'react-icons/gi';
+import { AiFillShopping } from 'react-icons/ai';
+import { IoMdHelpCircle, IoMdStar, IoMdStarHalf } from 'react-icons/io';
 
 class ToyCard extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      favorite: false,
-      modalIsOpen: false
-    };
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
+    
+  
  
-  openModal() {
-    this.setState({modalIsOpen: true});
   }
- 
-  closeModal() {
-    this.setState({modalIsOpen: false});
-  }
-
   render() {
     return (
-      <div className="FlexContainer">
-        <div className="ToyCard" onClick={this.openModal}>
-          <cite>{this.props.name}</cite>
-          <img src={this.props.image} alt={this.props.name} />
+      <>
+        
           <figcaption>
-            <p>
-              <ModalCardToy/>
-                
-           
-            
-                
-
-            </p>
+          <div style={{textAlign:"left", marginLeft:"4%", margin:"auto"}}>
+                    <h4 style={{border:"1px solid grey", padding:"13px", backgroundColor:"white"}}><FaHeart/> Favoris</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><AiFillShopping/> Mes ventes et achats</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><FaHandHoldingHeart/> Mon association</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><GiThreeFriends/> Inviter des amis</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><IoMdHelpCircle/> Centre d'aide</h4>
+                </div>
           </figcaption>
-        </div>
-      </div>
+        </>
+      
     );
   }
 }
