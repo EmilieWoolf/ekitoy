@@ -3,13 +3,12 @@ const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const path = require('path');
-const connection = require('./conf');
+const connection = require('./confTemplate');
 const port = 5000 ;
 
-
-
-
 const app = express();
+app.use(express.json());
+
 app.use(require('cors')())
 app.use(session({
 	secret: 'secret',
@@ -66,5 +65,18 @@ app.get("/api/toy", (request, response) => {
       else response.send(rows);
     });
   });
+
+  app.post('/api/addtoy', (req, res) => {
+	const formData = req.body;
+	connection.query('INSERT INTO toy SET ?', formData, (err, results) => {
+	  if (err) {
+		console.log(err);
+		res.status(500).send("Error inserting toy");
+	  } else {
+		  console.log(req.body)
+		res.sendStatus(200);
+	  }
+		});
+	});  
 
 app.listen({port});

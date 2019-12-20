@@ -8,6 +8,7 @@ import barbie_2 from '../img/barbie_2.jpeg';
 import {connect} from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import {updateToys} from '../actions/updateToys';
+import {Link} from 'react-router-dom';
 
 const mstp = state => {
     return {
@@ -18,6 +19,13 @@ const mstp = state => {
 class DescriptionArticle extends Component {
 
     componentDidMount() {
+        const {toys} = this.props;
+        if (toys === []) {
+            this.props.updateToysList()
+        }
+    }
+
+    componentDidUpdate() {
         const {toys} = this.props;
         if (toys === []) {
             this.props.updateToysList()
@@ -35,7 +43,7 @@ class DescriptionArticle extends Component {
             <div>
                 <Carousel>
                     <div>
-                        <img src={barbie} alt="photo1" />
+                        <img src='../back/public/{toy.pictures}' alt="photo1" />
                     </div>
                     <div>
                         <img src={barbie_1} alt="photo2" />
@@ -45,7 +53,7 @@ class DescriptionArticle extends Component {
                     </div>
                 </Carousel>
                 <div className="container" style={{justifyContent:"space-between"}}>
-                    <button style={{fontSize:"40px"}}><FaLongArrowAltLeft/></button>
+                    <Link to='/home'><button style={{fontSize:"40px"}}><FaLongArrowAltLeft/></button></Link>
                     <button style={{fontSize:"40px"}}>❤️</button>
                 </div>
                 <div style={{textAlign: "left", marginLeft:"4%"}}>                    
@@ -54,7 +62,7 @@ class DescriptionArticle extends Component {
                             <h2>Bon état •</h2>
                             <h2 style={{color:"pink", marginLeft:"2%"}}>{toy.name}</h2>
                         </div>                    
-                    <h3>{toys.price}</h3>
+                    <h3>{toy.price}€</h3>
                 </div>
                 <div className="conteneur">
                     <div>

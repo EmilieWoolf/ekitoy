@@ -33,7 +33,7 @@ class ToyList extends React.Component {
       <div>
         {toys.map(toy =>
           <div>
-            <p><Link to={`/toys/${toy.id}`}>{toy.name}</Link></p>
+            <p><Link to={`/toys/${toy.id}`}><img src='../back/public/{toy.pictures}' />{toy.name}</Link></p>
           </div>
         )}
       </div>

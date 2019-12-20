@@ -4,7 +4,7 @@ import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSearch, faPlusCircle, faEnvelope, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import ToyList from './ToyList';
 import DescriptionArticle from './DescriptionArticle';
 import Search from './search.jsx';
 import NewToyForm from './NewToyForm.jsx';
@@ -36,7 +36,7 @@ const Navbar = () => {
             </Nav>
             <Switch>
                 <Route path="/home">
-                    <Home />
+                    <ToyList />
                 </Route>
                 <Route path="/search">
                     <Search />
