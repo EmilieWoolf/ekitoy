@@ -65,19 +65,12 @@ CREATE TABLE IF NOT EXISTS `ekitoy`.`toy` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(255) NOT NULL,
   `description` LONGTEXT NOT NULL,
-  `categories` VARCHAR(255) NOT NULL,
-  `keyword` VARCHAR(255) NOT NULL,
-  `etat` VARCHAR(255) NOT NULL,
+  `categories` VARCHAR(255),
+  `keyword` VARCHAR(255),
+  `etat` VARCHAR(255),
   `price` INT NULL,
-  `users_id` INT NOT NULL,
-  `pictures` VARCHAR(255) NULL,
-  PRIMARY KEY (`id`, `users_id`),
-  INDEX `fk_toy_users1_idx` (`users_id` ASC) ,
-  CONSTRAINT `fk_toy_users1`
-    FOREIGN KEY (`users_id`)
-    REFERENCES `ekitoy`.`users` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  `pictures` VARCHAR(255),
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
