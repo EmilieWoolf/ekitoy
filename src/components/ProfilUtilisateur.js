@@ -3,7 +3,8 @@ import { FaHeart, FaHandHoldingHeart } from 'react-icons/fa';
 import { GiWallet, GiThreeFriends } from 'react-icons/gi';
 import { AiFillShopping } from 'react-icons/ai';
 import { IoMdHelpCircle, IoMdStar, IoMdStarHalf } from 'react-icons/io';
-import user7 from '../img/user7.jpg'
+import user7 from '../img/user7.jpg';
+import Portemonnaie from './Portemonnaie.js';
 
 export default class ProfilUtilisateur extends Component {
 
@@ -27,13 +28,14 @@ export default class ProfilUtilisateur extends Component {
 
                 <div style={{textAlign:"left", margin:"auto"}}>
                     <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><FaHeart/>  Favoris</h3>
-                    <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><GiWallet/>  Mon porte monnaie</h3>
+                    <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><Portemonnaie/>  Mon porte monnaie</h3>
                     <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><AiFillShopping/>  Mes ventes et achats</h3>
                     <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><FaHandHoldingHeart/>  Mon association</h3>
                     <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><GiThreeFriends/>  Inviter des amis</h3>
                     <h3 style={{border:"1px solid #e5e2ce", padding:"13px", margin:"auto", marginBottom:"5px", backgroundColor:"#e8e3ce", width:"98%", fontSize:"1.5rem"}}><IoMdHelpCircle/>  Centre d'aide</h3>
                 </div>
             </div>
+
             );
         }
 
