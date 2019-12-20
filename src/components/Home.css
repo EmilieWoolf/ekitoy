@@ -1,11 +1,32 @@
-.display-3{
-    font-family: 'barbie',
+.containerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 13vw;
 }
+
+img {
+    width: 80vw !important;
+    margin: 10vh 0;
+}
+
+.kep-login-facebook.metro {
+    width: 80vw;
+    height: 7vh;
+    margin: 2vh;
+}
+
+.btn-danger {
+    width: 80vw;
+    height: 7vh;
+    margin: 2vh;
+}
+
 button {
-    padding : 15px;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 7vh;
+    margin: 2vh;
 }
-/* 
-@font-face {
-	font-family: "barbie";
-	src: url('./font/barbie.ttf')format("truetype");;
-} */

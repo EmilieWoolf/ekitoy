@@ -74,6 +74,18 @@ CREATE TABLE IF NOT EXISTS `ekitoy`.`toy` (
 ENGINE = InnoDB;
 
 
+ALTER TABLE `ekitoy`.`toy` CHANGE `categories` `categories` VARCHAR(255) NULL;
+ALTER TABLE `ekitoy`.`toy` CHANGE `keyword` `keyword` VARCHAR(255) NULL;
+ALTER TABLE `ekitoy`.`toy` CHANGE `etat` `etat` VARCHAR(255) NULL;
+
+
+
+INSERT INTO `ekitoy`.`toy` ( `users_id`, `name`, `description`,`price`,`pictures`) VALUES 
+(1'Camion Barbie', 'Petit bus rose, fonctionne sans piles . Jamais ouvert', '18', 'img1.png'),
+(1'Lego Architecture', 'Tour à construire , modele New York . Jamais ouvert', '18', 'img2.png'),
+(1'Lara Croft Figurine', 'Figure de collection . Neuf','15', 'img3.png'),
+(1'Game Boy Color', 'Modele transaprent vintage . Parfait Etat', '8', 'img4.png'),
+(1'Barbie Agent Secret', 'Poupée mannequin pour jeunes filles. Dans son emballage , non ouvert. Envoi soigné & rapide!', '5', 'img5.png');
 -- -----------------------------------------------------
 -- Table `ekitoy`.`categories`
 -- -----------------------------------------------------
