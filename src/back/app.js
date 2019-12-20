@@ -6,9 +6,8 @@ const path = require('path');
 const connection = require('./conf');
 const port = 5000 ;
 
-app.use(express.json());
 
-app.use(express.static('public'));
+
 
 const app = express();
 app.use(require('cors')())
@@ -23,6 +22,8 @@ app.use(bodyParser.json());
 app.get('/', function (request, response) {
 	response.sendFile(path.join(__dirname + '/Admin.js'));
 });
+
+app.use(express.json());
 
 app.post('/auth', function (request, response) {
 	console.log(request.body)
