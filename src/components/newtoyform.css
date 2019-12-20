@@ -1,0 +1,21 @@
+.ContainerFlex {
+    display: flex;
+    flex-direction: column;
+    margin: 2.4vh;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+button.btn.btn-danger.toy {
+    margin: 3vh !important;
+    width: 60vw;
+    font-size: 1.4em;
+}
+
+input {
+    border: 1px solid black;
+    height: 5vh;
+    border-radius: 10px;
+}

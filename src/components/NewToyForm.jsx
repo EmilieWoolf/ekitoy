@@ -1,35 +1,30 @@
 import React from 'react';
 import { Button } from 'reactstrap';
+import './newtoyform.css'
 
 const NewToyForm = () => {
     return (
-        <div>
-            <h2 style={{marginTop:"30px", marginBottom:"30px", textAlign:"center"}}>Vendre un article</h2>
-            <form>
-                <div>
+        <div className="ContainerFlex">
+            <h2>Vendre un article</h2>
+            <form className="ContainerFlex">
+                <div className="ContainerFlex">
                     <label for="titre">Titre</label>{'  '}
                     <input type="text" name="titre" required />
                 </div>
-                <div>
+                <div className="ContainerFlex">
                     <label for="description">Description</label>{'  '}
                     <input type="textarea" name="description" required />
                 </div>
-                <div>
+                <div className="ContainerFlex">
                     <label for="photo">Choisis des photos</label>
                     <input type="file" name="photo" required />
                 </div>
-                <div>
-                    <select name="category"></select>
-                </div>
-                <div>
-                    <select name="condition" required></select>
-                </div>
-                <div>
+                <div className="ContainerFlex">
                     <label for="price" required>Prix en euros</label>{'  '}
                     <input type="number" name="price" />
                 </div>
-                <div>
-                    <Button type="submit" color="danger">Ajouter un jouet</Button>
+                <div >
+                    <Button type="submit" color="danger" className="toy">Ajouter un jouet</Button>
                 </div>
             </form>
         </div>
