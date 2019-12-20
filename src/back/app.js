@@ -6,7 +6,7 @@ const path = require('path');
 const connection = require('./conf');
 const port = 5000 ;
 
-app.use(express.json());
+
 
 
 const app = express();
@@ -16,31 +16,39 @@ app.use(session({
 	resave: true,
 	saveUninitialized: true
 }));
-app.use(bodyParser.urlencoded({extended : true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', function(request, response) {
+app.get('/', function (request, response) {
 	response.sendFile(path.join(__dirname + '/Admin.js'));
 });
 
-app.post('/auth', function(request, response) {
-    console.log(request.body)
+app.use(express.json());
+
+app.post('/auth', function (request, response) {
+	console.log(request.body)
 	const email = request.body.email;
 	const password = request.body.password;
 	if (email && password) {
-		connection.query('SELECT * FROM users WHERE mail = ? AND password = ?', [email, password], function(error, results, fields) {
-			if (results.length > 0) {
-				response.send({email});
+		connection.query('SELECT * FROM users WHERE mail = ? AND password = ?', [email, password], function (error, results, fields) {
+			if (error) {
+				console.log(error)
+				response.sendStatus(500)
 			} else {
-				response.send('Incorrect Username and/or Password!');
-			}			
+
+				if (results.length > 0) {
+					response.send({ email });
+				} else {
+					response.send('Incorrect Username and/or Password!');
+				}
+			}
 		});
 	} else {
 		response.send('Please enter Username and Password!');
 	}
 });
 
-app.get('/home', function(request, response) {
+app.get('/home', function (request, response) {
 	if (request.session.loggedin) {
 		response.send('Welcome back, ' + request.session.username + '!');
 	} else {
