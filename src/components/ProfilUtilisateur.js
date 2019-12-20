@@ -25,12 +25,12 @@ export default class ProfilUtilisateur extends Component {
                     </div>     
                 </div>
 
-                <div style={{textAlign:"left", marginLeft:"4%", margin:"auto"}}>
+                <div style={{textAlign:"left", marginLeft:"4%", margin:"auto" , paddingBottom : "15px"}}>
                     <h4 style={{border:"1px solid grey", padding:"13px", backgroundColor:"white"}}><FaHeart/> Favoris</h4>
                     <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><AiFillShopping/> Mes ventes et achats</h4>
                     <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><FaHandHoldingHeart/> Mon association</h4>
                     <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><GiThreeFriends/> Inviter des amis</h4>
-                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><IoMdHelpCircle/> Centre d'aide</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white" , paddingBottom:"15px"}}><IoMdHelpCircle/> Centre d'aide</h4>
                 </div>
             </div>
             );
