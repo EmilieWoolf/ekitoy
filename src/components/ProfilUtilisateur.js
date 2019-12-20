@@ -10,7 +10,7 @@ export default class ProfilUtilisateur extends Component {
     render() {
         return (
             <div>
-                <h2 style={{marginTop:"30px", marginBottom:"30px", textAlign:"center"}}>Mon profil</h2>
+                <h2 style={{marginTop:"30px", marginBottom:"30px", textAlign:"center", 'background' : "white"}}>Mon profil</h2>
 
                 <div className="container" style={{display:"flex", flexDirection:"row", marginBottom:"15px", marginTop:"-15px"}}>
                     <div>
@@ -26,12 +26,11 @@ export default class ProfilUtilisateur extends Component {
                 </div>
 
                 <div style={{textAlign:"left", marginLeft:"4%", margin:"auto"}}>
-                    <h3 style={{border:"1px solid grey", padding:"13px", backgroundColor:"#eee9c6"}}><FaHeart/> Favoris</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><GiWallet/> Mon porte monnaie</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><AiFillShopping/> Mes ventes et achats</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><FaHandHoldingHeart/> Mon association</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><GiThreeFriends/> Inviter des amis</h3>
-                    <h3 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"#eee9c6"}}><IoMdHelpCircle/> Centre d'aide</h3>
+                    <h4 style={{border:"1px solid grey", padding:"13px", backgroundColor:"white"}}><FaHeart/> Favoris</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><AiFillShopping/> Mes ventes et achats</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><FaHandHoldingHeart/> Mon association</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><GiThreeFriends/> Inviter des amis</h4>
+                    <h4 style={{border:"1px solid grey", padding:"13px", marginTop:"-11px", backgroundColor:"white"}}><IoMdHelpCircle/> Centre d'aide</h4>
                 </div>
             </div>
             );

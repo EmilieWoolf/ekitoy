@@ -1,7 +1,7 @@
 import React from 'react';
 import './toycard.css';
 import Modal from 'react-modal';
-
+import ModalCardToy from './ModalCardToy'
 
 class ToyCard extends React.Component {
   constructor(props) {
@@ -30,25 +30,11 @@ class ToyCard extends React.Component {
           <img src={this.props.image} alt={this.props.name} />
           <figcaption>
             <p>
-              <span
-                className={this.state.favorite ? 'is-favorite' : ''}
-                onClick={event => {
-                  const newFavorite = !this.state.favorite;
-                  this.setState({ favorite: newFavorite });
-                }}
-              >
-                &#9733;
-              </span>
+              <ModalCardToy/>
+                
+           
             
-                <Modal
-                  isOpen={this.state.modalIsOpen}
-                  onRequestClose={this.closeModal}
-                >
-        
-                  <button onClick={this.closeModal}>close</button>
-                  <img src={this.props.image} alt={this.props.name} />
-                  
-                </Modal>
+                
 
             </p>
           </figcaption>
@@ -59,3 +45,5 @@ class ToyCard extends React.Component {
 }
 
 export default ToyCard;
+
+
